@@ -1,15 +1,26 @@
 {
-	"name": "request_header",
+	"name": "project2-apis-headerparser",
 	"version": "0.0.1",
 	"description": "API project for freeCodeCamp",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "node server.js",
+		"test": "node test.js"
+	},
+	"engines": {
+		"node": "14.x"
 	},
 	"dependencies": {
+		"cors": "^2.8.0",
+		"dotenv": "^8.2.0",
+		"ejs": "3.1.5",
 		"express": "^5.0.0-alpha.2",
-		"cors": "^2.8.1",
-		"dotenv": "^8.2.0"
+		"mongodb": "^3.6.4",
+		"mongoose": "^5.11.18"
+	},
+	"devDependencies": {
+		"got": "11.8.2",
+		"tape": "5.2.1"
 	},
 	"repository": {
 		"type": "git",
@@ -18,7 +29,9 @@
 	"keywords": [
 		"node",
 		"hyperdev",
-		"express"
+		"express",
+		"heroku",
+		"freecodecamp"
 	],
 	"license": "MIT"
 }
